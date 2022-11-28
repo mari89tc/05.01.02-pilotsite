@@ -54,6 +54,13 @@ h2 {
   font-weight: lighter;
   padding: 15px;
 }
+h3 {
+  color: white;
+  font-family: "Cabin", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 15px;
+}
 main p {
   font-family: "Cabin", sans-serif;
   color: white;
@@ -68,17 +75,25 @@ footer {
 }
 
 /* Info side */
-@media (min-width: 800px) {
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-  }
-  .span_2 {
-    grid-row: span 2;
-  }
-}
 
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+/*
+.span_2 {
+  grid-row: span 2;
+}
+*/
+.container {
+  display: grid;
+  place-items: end center;
+}
+img,
+h3 {
+  grid-area: 1/1;
+}
 /*Min passion */
 iframe {
   width: 100%;
