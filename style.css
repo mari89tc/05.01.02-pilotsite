@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: RussoOne;
+  src: url(RussoOne-Regular.ttf);
+}
+@font-face {
+  font-family: Cabin;
+  src: url(Cabin-VariableFont_wdth\wght.ttf);
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: black;
+}
+/* Nav */
+ul {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 30px;
+}
+nav a {
+  color: white;
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 10px 8px 10px;
+}
+
+/* Tekst */
+h1 {
+  color: rgb(59, 192, 59);
+  font-family: "RussoOne", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+}
+h2 {
+  color: white;
+  font-family: "RussoOne", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 15px;
+}
+main p {
+  font-family: "Cabin", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+}
+footer {
+  font-family: "Cabin", sans-serif;
+  color: rgb(59, 192, 59);
+  font-size: 15px;
+  gap: 20px;
+}
+
+/* Info side */
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .span_2 {
+    grid-row: span 2;
+  }
+}
+
+/*Min passion */
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+/*Proces*/
