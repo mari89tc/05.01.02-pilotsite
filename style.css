@@ -21,7 +21,13 @@ body {
   max-width: 1200px;
   margin-inline: auto;
   background-color: black;
+  /*
+  background-image: url(webp/techstorylab.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
 }
+
 /* Nav */
 ul {
   display: flex;
@@ -41,11 +47,12 @@ nav a {
 
 /* Tekst */
 h1 {
-  color: rgb(59, 192, 59);
+  color: #eb688b;
   font-family: "RussoOne", sans-serif;
   font-size: 30px;
   font-weight: bold;
   padding: 15px;
+  text-align: center;
 }
 h2 {
   color: white;
@@ -69,16 +76,18 @@ main p {
 }
 footer {
   font-family: "Cabin", sans-serif;
-  color: rgb(59, 192, 59);
+  color: #eb688b;
   font-size: 15px;
+  font-weight: bold;
   gap: 20px;
+  place-items: bottom;
 }
 
 /* Info side */
 
 .grid_1-1-1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap: 10px;
 }
 /*
@@ -101,3 +110,8 @@ iframe {
   aspect-ratio: 16/9;
 }
 /*Proces*/
+.grid_2_1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
