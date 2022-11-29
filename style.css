@@ -18,9 +18,9 @@ video {
   display: block;
 }
 body {
-  max-width: 1200px;
+  max-width: 1100px;
   margin-inline: auto;
-  background-color: black;
+  background-color: #221e43; /*#221e43  #433323 */
   padding: 20px;
 }
 
@@ -34,7 +34,7 @@ ul {
   margin-top: 30px;
 }
 nav a {
-  color: white;
+  color: #fa2869;
   font-family: "Cabin", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -43,30 +43,47 @@ nav a {
 
 /* Tekst */
 h1 {
-  color: #eb688b;
+  color: #fa2869;
   font-family: "RussoOne", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  padding: 15px;
-  text-align: center;
+  padding: 0 550px;
 }
+
+.overskrift_sprite {
+  width: 100px;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotatey(0deg);
+  }
+  50% {
+    transform: rotatey(360deg);
+  }
+  100% {
+    transform: rotatey(0deg);
+  }
+}
+
 h2 {
-  color: white;
+  color: #eb688b;
   font-family: "RussoOne", sans-serif;
   font-size: 18px;
   font-weight: lighter;
-  padding: 15px;
+  padding: 25px 0;
 }
 h3 {
   color: white;
   font-family: "Cabin", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
-  padding: 15px;
+  padding: 7px;
 }
 main p {
   font-family: "Cabin", sans-serif;
-  color: white;
+  color: #eb688b;
   font-size: 15px;
   font-weight: lighter;
 }
@@ -75,7 +92,7 @@ footer {
   color: #eb688b;
   font-size: 15px;
   font-weight: bold;
-  gap: 20px;
+  padding: 25px 0;
   place-items: bottom;
 }
 
@@ -108,12 +125,22 @@ footer {
 /* tekst på billede */
 .container {
   display: grid;
-  place-items: end center;
+  place-items: end left;
 }
 img,
 h3 {
   grid-area: 1/1;
 }
+
+.tekst {
+  display: grid;
+  place-items: center left;
+}
+img,
+h3 {
+  grid-area: 1/1;
+}
+
 /*Min passion */
 iframe {
   width: 100%;
